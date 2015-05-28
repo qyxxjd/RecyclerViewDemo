@@ -1,0 +1,52 @@
+// 声明是Android程序
+apply plugin: 'com.android.application'
+
+//每一个Module都需要有一个gradle配置文件，语法都是一样，
+//唯一不同的是开头声明的是 apply plugin: ‘com.android.library’
+
+android {
+    // 编译SDK的版本
+    compileSdkVersion 22
+    // build tools的版本
+    //这个需要你本地安装该版本才行，很多人导入新的第三方库，失败的原因之一是build version的版本不对，
+    // 这个可以手动更改成你本地已有的版本或者打开 SDK Manager 去下载对应版本。
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        // 应用的包名
+        applicationId "demo.hzdracom.com.androidldemo"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            // 是否进行混淆
+            minifyEnabled false
+            // 混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    lintOptions {
+        // 移除lint检查的error
+        abortOnError false
+    }
+}
+
+dependencies {
+    // 编译libs目录下的所有jar包
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.1.1'
+
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile "com.android.support:recyclerview-v7:22.1.1"
+    compile "com.android.support:cardview-v7:22.1.1"
+    compile 'com.github.rey5137:material:1.1.1'
+
+    //可以理解成Android Library
+    // 编译extras目录下的ShimmerAndroid模块
+    //compile project(':extras:ShimmerAndroid')
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android L 新特性</string>
+
+    <string name="action_vertical">Vertical</string>
+    <string name="action_horizontal">Horizontal</string>
+    <string name="action_grid">GridLayout</string>
+    <string name="action_staggered_v">Staggered V</string>
+    <string name="action_staggered_h">Staggered H</string>
+    <string name="action_multiple">Multiple Views</string>
+
+</resources>

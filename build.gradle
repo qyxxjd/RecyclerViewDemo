@@ -1,0 +1,24 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+	//很多人导入新的第三方库，失败的原因之一是build gradle的版本不对
+	//由于android gradle 插件的开发还是很活跃的,而且目前而言,可能还存在一些我们不知道的坑,
+	//但是,别人踩过,后边,官方修复,为了不踩坑,建议android gradle 始终保持最新版本
+        classpath 'com.android.tools.build:gradle:1.2.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        //声明仓库的源，这里可以看到是指明的jcenter(), 之前版本则是mavenCentral()
+        //jcenter可以理解成是一个新的中央远程仓库，兼容maven中心仓库，而且性能更优。
+        jcenter()
+    }
+}
