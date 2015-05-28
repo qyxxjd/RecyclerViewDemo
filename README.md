@@ -24,3 +24,9 @@
 ![github](http://img.my.csdn.net/uploads/201505/28/1432796568_8712.png "github")  
 ### 多种item效果图
 ![github](http://img.my.csdn.net/uploads/201505/28/1432796568_3361.png "github")  
+
+
+### 关于 
+Q  Q:630404403 <br />
+微信:630404403 <br />
+博客:[http://blog.csdn.net/qy1387](http://blog.csdn.net/qy1387) 
