@@ -1,5 +1,3 @@
-# RecyclerViewDemo
-
 ### RecyclerView
     RecyclerView用来替代ListView，更好的性能而且更容易使用。
     该控件是一个可以装载大量的视图集合，并且可以非常效率的进行回收和滚动，当你list中的元素经常动态改变时可以使用RecyclerView控件
