@@ -12,7 +12,7 @@
 > - CardView是一个Layout，所以可以包含其他View
 
 
-
+截图
 -----------------------------------
 ### 垂直布局效果图
 ![github](http://img.my.csdn.net/uploads/201505/28/1432796567_7156.png "github")  
@@ -26,7 +26,7 @@
 ![github](http://img.my.csdn.net/uploads/201505/28/1432796568_3361.png "github")  
 
 
-### 关于 
+## 关于 
 Q  Q:630404403 <br />
 微信:630404403 <br />
 博客:[http://blog.csdn.net/qy1387](http://blog.csdn.net/qy1387) 
